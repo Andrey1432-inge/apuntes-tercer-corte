@@ -60,612 +60,148 @@ $$\frac{A}{s^3}$$
 
 # 2. Modelamiento por diagramas
 
-1. Modelos de sistemas complejos
+## 1. Modelos de sistemas complejos
+
 Se pueden construir a partir de:
 
-Funciones de transferencia individuales.
+ -Funciones de transferencia individuales.
 
-Modelos existentes para componentes comunes.
+ -Modelos existentes para componentes comunes.
 
-Sin fórmulas específicas en esta diapositiva.
+## 2. Solenoide
 
-2. Solenoide
-Partes:
+**Partes:**
 
-Circuito eléctrico
+1. Circuito eléctrico
 
-Transductor electromecánico
+2. Transductor electromecánico
 
-Sistema mecánico
+3. Sistema mecánico
 
-Fórmulas clave:
+- **Fórmulas clave:**
 
 Fuerza del electroimán:
 
-𝐹
-(
-𝑡
-)
-∝
-𝑖
-(
-𝑡
-)
-F(t)∝i(t)
-Donde 
-𝑖
-(
-𝑡
-)
-i(t) es la corriente en la bobina.
+$$F(t)∝i(t)$$
+
+- Donde $$i(t)$$ es la corriente en la bobina.
 
 Dinámica mecánica (con resorte y amortiguador):
 
-𝑀
-𝑥
-¨
-(
-𝑡
-)
-+
-𝐵
-𝑥
-˙
-(
-𝑡
-)
-+
-𝐾
-𝑥
-(
-𝑡
-)
-=
-𝐹
-(
-𝑡
-)
-M 
-x
-¨
- (t)+B 
-x
-˙
- (t)+Kx(t)=F(t)
-Ejemplo: Un solenoide que mueve una válvula proporcionalmente al voltaje aplicado.
+$$Mx¨(t) + Bx˙(t)+Kx(t)=F(t)$$
 
-3. Motor DC (Corriente de campo constante)
-Ecuaciones clave:
+- Ejemplo: Un solenoide que mueve una válvula proporcionalmente al voltaje aplicado.
 
-Flujo magnético:
+## 3. Motor DC (Corriente de campo constante)
 
-𝜙
-∝
-𝑖
-𝑓
-ϕ∝i 
-f
-​
- 
-Torque:
+**Ecuaciones clave:**
 
-𝑇
-=
-𝐾
-𝑇
-𝜙
-𝑖
-𝑎
-T=K 
-T
-​
- ϕi 
-a
-​
- 
-Voltaje inducido:
+1. Flujo magnético:
 
-𝑒
-𝑎
-=
-𝐾
-𝑒
-𝜔
-e 
-a
-​
- =K 
-e
-​
- ω
-Ecuación eléctrica:
+$$𝜙∝𝑖_𝑓$$
+ 
+2. Torque:
 
-𝑉
-𝑎
-=
-𝑅
-𝑎
-𝑖
-𝑎
-+
-𝐿
-𝑎
-𝑑
-𝑖
-𝑎
-𝑑
-𝑡
-+
-𝑒
-𝑎
-V 
-a
-​
- =R 
-a
-​
- i 
-a
-​
- +L 
-a
-​
-  
-dt
-di 
-a
-​
+$$𝑇=𝐾_𝑇𝜙𝑖_𝑎$$
  
-​
- +e 
-a
-​
- 
-Dinámica mecánica:
+3. Voltaje inducido:
 
-𝐽
-𝑑
-𝜔
-𝑑
-𝑡
-+
-𝐵
-𝜔
-=
-𝑇
-J 
-dt
-dω
-​
- +Bω=T
-4. Motor DC (Corriente de armadura)
-Asumiendo 
-𝑖
-𝑓
-=
-cte
-⇒
-𝜙
-=
-cte
-i 
-f
-​
- =cte⇒ϕ=cte, se simplifica:
+$$𝑒_𝑎=K_𝑒𝜔$$
 
-Torque:
+4. Ecuación eléctrica:
 
-𝑇
-=
-𝐾
-𝑖
-𝑎
-T=Ki 
-a
-​
+$$𝑉_𝑎=𝑅_𝑎𝑖_𝑎 + 𝐿_𝑎\frac{𝑑𝑖_𝑎}{𝑑𝑡} + 𝑒_𝑎$$
  
-Ecuación completa:
+5. Dinámica mecánica:
 
-𝑉
-𝑎
-=
-𝑅
-𝑎
-𝑖
-𝑎
-+
-𝐿
-𝑎
-𝑑
-𝑖
-𝑎
-𝑑
-𝑡
-+
-𝐾
-𝜔
-V 
-a
-​
- =R 
-a
-​
- i 
-a
-​
- +L 
-a
-​
-  
-dt
-di 
-a
-​
- 
-​
- +Kω
-Mecánica:
+$$𝐽\frac{𝑑𝜔}{𝑑𝑡} + 𝐵𝜔 = 𝑇$$
 
-𝐽
-𝑑
-𝜔
-𝑑
-𝑡
-+
-𝐵
-𝜔
-=
-𝐾
-𝑖
-𝑎
-J 
-dt
-dω
-​
- +Bω=Ki 
-a
-​
- 
-5. Engranajes y Poleas
-Relación de transformación:
+## 4. Motor DC (Corriente de armadura)
 
-𝜃
-2
-=
-𝑁
-1
-𝑁
-2
-𝜃
-1
-θ 
-2
-​
- = 
-N 
-2
-​
- 
-N 
-1
-​
- 
-​
- θ 
-1
-​
- 
-𝜏
-1
-=
-𝑁
-2
-𝑁
-1
-𝜏
-2
-τ 
-1
-​
- = 
-N 
-1
-​
- 
-N 
-2
-​
- 
-​
- τ 
-2
-​
- 
-Efecto sobre parámetros:
+Asumiendo $$𝑖_𝑓 = cte ⇒ 𝜙 = cte$$, se simplifica:
 
-𝐽
-𝑒
-𝑞
-=
-(
-𝑁
-1
-𝑁
-2
-)
-2
-𝐽
-carga
-J 
-eq
-​
- =( 
-N 
-2
-​
- 
-N 
-1
-​
- 
-​
- ) 
-2
- J 
-carga
-​
- 
-6. Transmisión rotacional a lineal
-Relación:
+1. Torque:
 
-𝑥
-=
-𝑟
-𝜃
-x=rθ
-𝐹
-=
-𝜏
-𝑟
-F= 
-r
-τ
-​
- 
-7. Palancas
-Principio de momentos:
+$$𝑇 = 𝐾𝑖_𝑎$$
 
-𝐹
-1
-𝐿
-1
-=
-𝐹
-2
-𝐿
-2
-F 
-1
-​
- L 
-1
-​
- =F 
-2
-​
- L 
-2
-​
- 
-8. Potenciómetros
-Rotación:
+2. Ecuación completa:
 
-𝑉
-salida
-=
-(
-𝜃
-𝜃
-max
-)
-𝑉
-ref
-V 
-salida
-​
- =( 
-θ 
-max
-​
- 
-θ
-​
- )V 
-ref
-​
- 
-Traslación:
+$$𝑉_𝑎 = 𝑅_𝑎𝑖_𝑎 + 𝐿_𝑎\frac{𝑑𝑖_𝑎}{𝑑𝑡} + 𝐾𝜔$$
 
-𝑉
-salida
-=
-(
-𝑥
-𝑥
-max
-)
-𝑉
-ref
-V 
-salida
-​
- =( 
-x 
-max
-​
- 
-x
-​
- )V 
-ref
-​
- 
-9. Tacómetros
-Conversión de velocidad angular a voltaje:
+3. Mecánica:
 
-𝑉
-=
-𝐾
-𝜔
-V=Kω
-10. Sensores transmisores
-Lineales:
+$$𝐽\frac{𝑑𝜔}{𝑑𝑡} + 𝐵𝜔 = 𝐾𝑖_𝑎$$
 
-𝐻
-(
-𝑠
-)
-=
-TO
-PV
-=
-𝐾
-H(s)= 
-PV
-TO
-​
- =K
-No lineales: requieren linealización (no se da fórmula explícita).
+## 5. Engranajes y Poleas
 
-11. Mezcla de sustancias
-Modelo de mezcla continua:
+- Relación de transformación:
 
-𝐺
-(
-𝑠
-)
-=
-𝑄
-(
-𝑠
-)
-𝑄
-𝑖
-(
-𝑠
-)
-=
-𝜌
-inicial
-𝑠
-+
-𝜌
-in
-𝑣
-in
-𝑠
-+
-𝑣
-out
-G(s)= 
-Q 
-i
-​
- (s)
-Q(s)
-​
- = 
-s+v 
-out
-​
+$$𝜃_2 = \frac{𝑁_1}{𝑁_2}𝜃_1$$
  
-ρ 
-inicial
-​
- s+ρ 
-in
-​
- v 
-in
-​
+$$𝜏_1 = \frac{𝑁_2}{𝑁_1}𝜏_2$$
  
-​
- 
-Ejemplo:
+- Efecto sobre parámetros:
 
-𝐺
-(
-𝑠
-)
-=
-2
-𝑠
-+
-3
-⋅
-4
-𝑠
-+
-4
-=
-2
-𝑠
-+
-12
-𝑠
-+
-4
-G(s)= 
-s+4
-2s+3⋅4
-​
- = 
-s+4
-2s+12
-​
+$$𝐽_{eq} =(\frac{𝑁_1}{𝑁_2})^2*𝐽_{carga}$$
  
-12. Sistema Térmico
+## 6. Transmisión rotacional a lineal
+
+- Relación:
+
+$$𝑥 = 𝑟𝜃$$
+
+$$𝐹 = \frac{𝜏}{𝑟}$$ 
+ 
+## 7. Palancas
+
+- Principio de momentos:
+
+$$𝐹_1𝐿_1 = 𝐹_2𝐿_2$$
+ 
+## 8. Potenciómetros
+
+- Rotación:
+
+$$𝑉_{salida} = (\frac{𝜃}{𝜃_{max}})𝑉_{ref}$$
+
+- Traslación:
+
+$$𝑉_{salida} = (\frac{𝑥}{𝑥_{max}})𝑉_{ref}$$
+ 
+## 9. Tacómetros
+
+- Conversión de velocidad angular a voltaje:
+
+$$𝑉 = 𝐾𝜔$$
+
+## 10. Sensores transmisores
+
+- Lineales:
+
+$$𝐻(𝑠) = \frac{TO}{PV} = 𝐾$$
+
+- No lineales: requieren linealización (no se da fórmula explícita).
+
+## 11. Mezcla de sustancias
+
+- Modelo de mezcla continua:
+
+$$𝐺(𝑠) = \frac{𝑄(𝑠)}{𝑄_𝑖(𝑠)} = \frac{𝜌_{inicial}𝑠 + 𝜌_{in}𝑣_{in}}{𝑠 + 𝑣_{out}}$$
+ 
+**Ejemplo:**
+
+$$𝐺(𝑠) = frac{2𝑠 + 3 ⋅ 4}{𝑠 + 4} = \frac{2𝑠 + 12}{𝑠 + 4}$$
+ 
+## 12. Sistema Térmico
 Aunque el documento no incluye fórmulas detalladas, generalmente se modela como:
 
-𝐶
-𝑑
-𝑇
-𝑑
-𝑡
-=
-𝑄
-in
-−
-𝑇
-−
-𝑇
-amb
-𝑅
-C 
-dt
-dT
-​
- =Q 
-in
-​
- − 
-R
-T−T 
-amb
-​
- 
-​
- 
+$$𝐶\frac{𝑑𝑇}{𝑑𝑡} = 𝑄_{in} − \frac{𝑇 − 𝑇_{amb}}{𝑅}$$
+
 donde:
 
-𝐶
-C es la capacidad térmica
-
-𝑅
-R la resistencia térmica
-
-𝑇
-T temperatura del sistema
+- C es la capacidad térmica
+- R la resistencia térmica
+- T temperatura del sistema
 
 # 3. ALGEBRA DE BLOQUES
 
