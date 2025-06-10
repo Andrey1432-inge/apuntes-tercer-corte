@@ -42,19 +42,19 @@ $$D(s) = 0$$
 
 - Permite hallar el valor en
 
-  $$lim t→∞ = f(t) = lim s→0 sF(s)$$
+  $$lim  t→∞ = f(t) = lim  s→0 sF(s)$$
 
 ## 8. Entradas de prueba
 
-Escalón: 
+- Escalón: 
 
 $$\frac{A}{s}$$
 
-Rampa: 
+- Rampa: 
  
 $$\frac{A}{s^2}$$
 
-Parábola: 
+- Parábola: 
 
 $$\frac{A}{s^3}$$
 ​
