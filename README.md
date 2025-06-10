@@ -42,7 +42,7 @@ $$D(s) = 0$$
 
 - Permite hallar el valor en
 
-  $$lim  t→∞ = f(t) = lim  s→0 sF(s)$$
+  $$lim_(t→∞) = f(t) = lim_(s→0) sF(s)$$
 
 ## 8. Entradas de prueba
 
