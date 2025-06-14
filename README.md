@@ -205,1004 +205,194 @@ donde:
 
 # 3. ALGEBRA DE BLOQUES
 
-Bloque funcional: representa una operación matemática entre entrada y salida.
+## 1. Definicion:
 
-Ejemplo:
-Entrada: 
-𝑈
-(
-𝑠
-)
-U(s), Bloque: 
-𝐺
-(
-𝑠
-)
-G(s), Salida: 
-𝑌
-(
-𝑠
-)
-Y(s)
-Fórmula:
+- Bloque funcional: representa una operación matemática entre entrada y salida.
 
-𝑌
-(
-𝑠
-)
-=
-𝐺
-(
-𝑠
-)
-⋅
-𝑈
-(
-𝑠
-)
-Y(s)=G(s)⋅U(s)
-📊 Diapositivas 3–5: Elementos del diagrama de bloques
-Flechas: indican dirección de señal (entrada → salida).
+**Ejemplo:**
 
-Punto de suma: combina señales con signos + / −.
+- Entrada: $$𝑈(𝑠)$$, Bloque: $$𝐺(𝑠)$$, Salida: $$𝑌(𝑠)$$
 
-Ejemplo:
+**Fórmula:**
 
-𝐸
-(
-𝑠
-)
-=
-𝑅
-(
-𝑠
-)
-−
-𝑌
-(
-𝑠
-)
-E(s)=R(s)−Y(s)
-📊 Diapositiva 6: Ramificación
-Una señal se dirige a múltiples bloques o puntos de suma.
+$$𝑌(𝑠) = 𝐺(𝑠) ⋅ 𝑈(𝑠)$$
 
-Ejemplo:
-𝑈
-(
-𝑠
-)
-→
-𝐺
-1
-(
-𝑠
-)
-U(s)→G 
-1
-​
- (s) y 
-𝐺
-2
-(
-𝑠
-)
-G 
-2
-​
- (s) simultáneamente.
+## 2. Elementos del diagrama de bloques
 
-📊 Diapositiva 7: Interpretación
-La salida es el producto entre la entrada y la función del bloque.
+- Flechas: indican dirección de señal (entrada → salida).
 
-Fórmula:
+- Punto de suma: combina señales con signos + / −.
 
-𝑌
-(
-𝑠
-)
-=
-𝐺
-(
-𝑠
-)
-⋅
-𝑈
-(
-𝑠
-)
-Y(s)=G(s)⋅U(s)
-📊 Diapositiva 8: Bloques en cascada
-Multiplicación secuencial de bloques.
+**Ejemplo:**
 
-Fórmula:
+$$𝐸(𝑠) = 𝑅(𝑠) − 𝑌(𝑠)$$
 
-𝑌
-(
-𝑠
-)
-=
-𝐺
-1
-(
-𝑠
-)
-⋅
-𝐺
-2
-(
-𝑠
-)
-⋅
-𝑈
-(
-𝑠
-)
-Y(s)=G 
-1
-​
- (s)⋅G 
-2
-​
- (s)⋅U(s)
-📊 Diapositiva 11: Álgebra de bloques
-Permite reducir diagramas complejos a una sola función de transferencia.
+## 3. Ramificación
 
-Se aplican reglas de simplificación.
+- Una señal se dirige a múltiples bloques o puntos de suma.
 
-📊 Diapositiva 13: Lazo de realimentación positiva
-Fórmulas:
+**Ejemplo:**
 
-𝑌
-(
-𝑠
-)
-=
-𝐺
-1
-(
-𝑠
-)
-1
-−
-𝐺
-1
-(
-𝑠
-)
-𝐺
-2
-(
-𝑠
-)
-⋅
-𝑋
-(
-𝑠
-)
-Y(s)= 
-1−G 
-1
-​
- (s)G 
-2
-​
- (s)
-G 
-1
-​
- (s)
-​
- ⋅X(s)
-📊 Diapositiva 14: Lazo de realimentación negativa
-Caso más común en control.
+$$𝑈(𝑠) → 𝐺_1(𝑠) y 𝐺_2(𝑠)$$ simultáneamente.
 
-Fórmula:
+## 4. Interpretación
 
-𝑌
-(
-𝑠
-)
-=
-𝐺
-1
-(
-𝑠
-)
-1
-+
-𝐺
-1
-(
-𝑠
-)
-𝐺
-2
-(
-𝑠
-)
-⋅
-𝑋
-(
-𝑠
-)
-Y(s)= 
-1+G 
-1
-​
- (s)G 
-2
-​
- (s)
-G 
-1
-​
- (s)
-​
- ⋅X(s)
-📊 Diapositivas 16–18: Aplicación del álgebra de bloques
-Ejemplo de reducción de un sistema con varias entradas:
+- La salida es el producto entre la entrada y la función del bloque.
 
-𝑌
-(
-𝑠
-)
-𝑋
-1
-(
-𝑠
-)
-=
-𝐺
-3
-(
-𝑠
-)
-(
-𝐺
-1
-(
-𝑠
-)
-−
-𝐺
-2
-(
-𝑠
-)
-)
-,
-𝑌
-(
-𝑠
-)
-𝑋
-2
-(
-𝑠
-)
-=
-𝐺
-4
-(
-𝑠
-)
-−
-1
-X 
-1
-​
- (s)
-Y(s)
-​
- =G 
-3
-​
- (s)(G 
-1
-​
- (s)−G 
-2
-​
- (s)), 
-X 
-2
-​
- (s)
-Y(s)
-​
- =G 
-4
-​
- (s)−1
-📊 Diapositiva 19: Ejemplo práctico
-Hallar 
-𝐶
-(
-𝑠
-)
-𝑅
-(
-𝑠
-)
-R(s)
-C(s)
-​
-  mediante simplificación de bloques.
+**Fórmula:**
 
-📊 Diapositiva 20: Resumen
-Los diagramas de bloques son clave para entender sistemas complejos.
+$$𝑌(𝑠) = 𝐺(𝑠) ⋅ 𝑈(𝑠)$$
 
-La realimentación negativa es esencial.
+## 5. Bloques en cascada
 
-El álgebra de bloques permite deducir funciones de transferencia fácilmente.
+- Multiplicación secuencial de bloques.
+
+**Fórmula:**
+
+$$𝑌(𝑠) = 𝐺_1(𝑠) ⋅ 𝐺_2(𝑠) ⋅ 𝑈(𝑠)$$
+​
+## 6. Álgebra de bloques
+
+- Permite reducir diagramas complejos a una sola función de transferencia.
+
+- Se aplican reglas de simplificación.
+
+## 7. Lazo de realimentación positiva
+
+**Fórmulas:**
+
+$$𝑌(𝑠) = \frac{𝐺_1(𝑠)}{1 − 𝐺_1(𝑠)𝐺_2(𝑠)} ⋅ 𝑋(𝑠)$$
+
+## 8. Lazo de realimentación negativa
+
+- Caso más común en control.
+
+**Fórmula:**
+
+$$𝑌(𝑠) = \frac{𝐺_1(𝑠)}{1 + 𝐺_1(𝑠)𝐺_2(𝑠)} ⋅ 𝑋(𝑠)$$
+
+## 9. Aplicación del álgebra de bloques
+
+- Ejemplo de reducción de un sistema con varias entradas:
+
+$$\frac{𝑌(𝑠)}{𝑋_1(𝑠)} = 𝐺_3(𝑠)((𝐺_1(𝑠) − 𝐺_2(𝑠)), \frac{𝑌(𝑠)}{𝑋_2(𝑠)} = 𝐺_4(𝑠) − 1$$
+
+## 10. Ejemplo práctico
+
+- Hallar $$\\frac{𝐶(𝑠)}{𝑅(𝑠)}$$ mediante simplificación de bloques.
+
+## 11. Resumen
+
+- Los diagramas de bloques son clave para entender sistemas complejos.
+
+- La realimentación negativa es esencial.
+
+- El álgebra de bloques permite deducir funciones de transferencia fácilmente.
 
 # DIAGRAMA DE FLUJO DE SEÑAL
 
-Diapositiva 2 – Introducción
-Usos: Representación de sistemas complejos.
+## 1. Introducción
 
-Objetivo: Obtener la función de transferencia total de forma sistemática.
+- Usos: Representación de sistemas complejos.
 
-Herramienta principal: Fórmula de Mason.
+- Objetivo: Obtener la función de transferencia total de forma sistemática.
 
-Diapositivas 3–4 – Elementos del diagrama
-Nodo: Representa una señal (entrada o salida).
+- Herramienta principal: Fórmula de Mason.
 
-Flecha: Representa una relación entre nodos mediante una función de transferencia (por ejemplo, 
-𝐺
-(
-𝑠
-)
-G(s)).
+## 2. Elementos del diagrama
 
-Diapositiva 5 – Interpretación
-Se sigue el flujo de las señales, como en un sistema dinámico.
+- Nodo: Representa una señal (entrada o salida).
 
-Diapositiva 6 – Comparación con diagramas de bloques
-Los diagramas de flujo de señal permiten un análisis más directo de sistemas complejos que los diagramas de bloques tradicionales.
+- Flecha: Representa una relación entre nodos mediante una función de transferencia (por ejemplo, $$𝐺(𝑠)$$).
 
-Diapositivas 8–10 – Definiciones clave
-Camino directo: Ruta desde entrada a salida sin repetir nodos.
+## 3. Interpretación
 
-Lazo (loop): Camino cerrado que regresa al mismo nodo.
+- Se sigue el flujo de las señales, como en un sistema dinámico.
 
-Ganancia de camino: Producto de las funciones de transferencia en ese camino.
+## 4. Comparación con diagramas de bloques
 
-Ganancia de lazo: Producto de funciones de transferencia de un lazo.
+- Los diagramas de flujo de señal permiten un análisis más directo de sistemas complejos que los diagramas de bloques tradicionales.
 
-📐 Diapositiva 12 – Fórmula de Mason
-𝐶
-(
-𝑠
-)
-𝑅
-(
-𝑠
-)
-=
-∑
-𝑃
-𝑘
-Δ
-𝑘
-Δ
-R(s)
-C(s)
-​
- = 
-Δ
-∑P 
-k
-​
- Δ 
-k
-​
+## 5. Definiciones clave
+
+- Camino directo: Ruta desde entrada a salida sin repetir nodos.
+
+- Lazo (loop): Camino cerrado que regresa al mismo nodo.
+
+- Ganancia de camino: Producto de las funciones de transferencia en ese camino.
+
+- Ganancia de lazo: Producto de funciones de transferencia de un lazo.
+
+## 6. Fórmula de Mason
+
+$$\frac{𝐶(𝑠)}{𝑅(𝑠)} = \frac{∑𝑃_𝑘Δ_𝑘}{Δ}$$
  
-​
+- 𝑃_𝑘: Ganancia de cada camino directo.
+
+- Δ: Determinante total del sistema:
+
+$$Δ = 1 − ∑𝐿_𝑖 + ∑𝐿_𝑖𝐿_𝑗 − ∑𝐿_𝑖𝐿_𝑗𝐿_𝑘 + ⋯$$
+
+- Δ_𝑘: Determinante sin los lazos que tocan el camino 𝑃_𝑘.
+
+## 7. Ejemplos resueltos
+
+- **Ejemplo 1**
+
+- Camino directo:
+
+$$𝑃_1 = 𝐺_1𝐺_2𝐺_3$$
  
-𝑃
-𝑘
-P 
-k
-​
- : Ganancia de cada camino directo.
+- Lazos:
+  - $$𝐿_1 = 𝐺_1𝐺_2𝐻_1$$
+  
+  - $$𝐿_2 = −𝐺_2𝐺_3𝐻_2$$
 
-Δ
-Δ: Determinante total del sistema:
+  - $$𝐿_3 = −𝐺_1𝐺_2𝐺_3$$
 
-Δ
-=
-1
-−
-∑
-𝐿
-𝑖
-+
-∑
-𝐿
-𝑖
-𝐿
-𝑗
-−
-∑
-𝐿
-𝑖
-𝐿
-𝑗
-𝐿
-𝑘
-+
-⋯
-Δ=1−∑L 
-i
-​
- +∑L 
-i
-​
- L 
-j
-​
- −∑L 
-i
-​
- L 
-j
-​
- L 
-k
-​
- +⋯
-Δ
-𝑘
-Δ 
-k
-​
- : Determinante sin los lazos que tocan el camino 
-𝑃
-𝑘
-P 
-k
-​
- .
+- Determinante:
 
-🧮 Ejemplos resueltos
-Ejemplo 1 – Diapositiva 13
-Camino directo:
+$$Δ = 1 − (𝐿_1 + 𝐿_2 + 𝐿_3)$$
 
-𝑃
-1
-=
-𝐺
-1
-𝐺
-2
-𝐺
-3
-P 
-1
-​
- =G 
-1
-​
- G 
-2
-​
- G 
-3
-​
+- Resultado:
+
+$$\frac{𝐶(𝑠)}{𝑅(𝑠)} = \frac{𝐺_1𝐺_2𝐺_3}{Δ}$$
  
-Lazos:
+- **Ejemplo 2**
 
-𝐿
-1
-=
-𝐺
-1
-𝐺
-2
-𝐻
-1
-L 
-1
-​
- =G 
-1
-​
- G 
-2
-​
- H 
-1
-​
+- 3 caminos directos:
+
+  - $$𝑃_1 = 𝐺_1𝐺_2𝐺_3𝐺_4𝐺_5$$ 
+  - $$𝑃_2 = 𝐺_1𝐺_6𝐺_4𝐺_5$$
+  - $$𝑃_3 = 𝐺_1𝐺_2𝐺_7$$
+
+- Lazos:
+
+  - $$𝐿_1 = −𝐺_4𝐻_1$$
+  - $$𝐿_2 = −𝐺_2𝐺_7𝐻_2$$
+  - $$𝐿_3 = −𝐺_6𝐺_4𝐺_5𝐻_2$$
+  - $$𝐿_4 = −𝐺_2𝐺_3𝐺_4𝐺_5𝐻_2$$
  
+- Determinante:
 
-𝐿
-2
-=
-−
-𝐺
-2
-𝐺
-3
-𝐻
-2
-L 
-2
-​
- =−G 
-2
-​
- G 
-3
-​
- H 
-2
-​
+  - $$Δ = 1 − 𝐿_1 + 𝐿_2 + 𝐿_3 + 𝐿_4 + 𝐿_1𝐿_2$$
  
-
-𝐿
-3
-=
-−
-𝐺
-1
-𝐺
-2
-𝐺
-3
-L 
-3
-​
- =−G 
-1
-​
- G 
-2
-​
- G 
-3
-​
+- Cofactores:
+  
+  - $$Δ_1 = 1$$
+  - $$Δ_2 = 1$$
+  - $$Δ_3 = 1 − 𝐿_1$$
  
+- Resultado:
 
-Determinante:
+$$\frac{𝐶(𝑠)}{𝑅(𝑠)} = \frac{𝑃_1Δ_1 + 𝑃_2Δ_2 + 𝑃_3Δ_3}{Δ}$$
+​
+## 8. Cómo resolver un problema con Mason paso a paso
 
-Δ
-=
-1
-−
-(
-𝐿
-1
-+
-𝐿
-2
-+
-𝐿
-3
-)
-Δ=1−(L 
-1
-​
- +L 
-2
-​
- +L 
-3
-​
- )
-Resultado:
+1. Identificar los caminos directos $$𝑃_𝑘$$ y calcular su ganancia.
+2. Identificar los lazos $$𝐿_𝑖$$ y su ganancia.
+3. Calcular Δ: considerar la combinación de lazos que no se tocan entre sí.
+4. Para cada camino directo $$𝑃_𝑘$$, calcular su cofactor $$Δ_𝑘$$ ignorando los lazos que lo tocan.
+5. Aplicar la fórmula de Mason:
 
-𝐶
-(
-𝑠
-)
-𝑅
-(
-𝑠
-)
-=
-𝐺
-1
-𝐺
-2
-𝐺
-3
-Δ
-R(s)
-C(s)
-​
- = 
-Δ
-G 
-1
-​
- G 
-2
-​
- G 
-3
-​
- 
-​
- 
-Ejemplo 2 – Diapositiva 14
-3 caminos directos:
-
-𝑃
-1
-=
-𝐺
-1
-𝐺
-2
-𝐺
-3
-𝐺
-4
-𝐺
-5
-,
-𝑃
-2
-=
-𝐺
-1
-𝐺
-6
-𝐺
-4
-𝐺
-5
-,
-𝑃
-3
-=
-𝐺
-1
-𝐺
-2
-𝐺
-7
-P 
-1
-​
- =G 
-1
-​
- G 
-2
-​
- G 
-3
-​
- G 
-4
-​
- G 
-5
-​
- ,P 
-2
-​
- =G 
-1
-​
- G 
-6
-​
- G 
-4
-​
- G 
-5
-​
- ,P 
-3
-​
- =G 
-1
-​
- G 
-2
-​
- G 
-7
-​
- 
-Lazos:
-
-𝐿
-1
-=
-−
-𝐺
-4
-𝐻
-1
-,
-𝐿
-2
-=
-−
-𝐺
-2
-𝐺
-7
-𝐻
-2
-,
-𝐿
-3
-=
-−
-𝐺
-6
-𝐺
-4
-𝐺
-5
-𝐻
-2
-,
-𝐿
-4
-=
-−
-𝐺
-2
-𝐺
-3
-𝐺
-4
-𝐺
-5
-𝐻
-2
-L 
-1
-​
- =−G 
-4
-​
- H 
-1
-​
- ,L 
-2
-​
- =−G 
-2
-​
- G 
-7
-​
- H 
-2
-​
- ,L 
-3
-​
- =−G 
-6
-​
- G 
-4
-​
- G 
-5
-​
- H 
-2
-​
- ,L 
-4
-​
- =−G 
-2
-​
- G 
-3
-​
- G 
-4
-​
- G 
-5
-​
- H 
-2
-​
- 
-Determinante:
-
-Δ
-=
-1
-−
-𝐿
-1
-+
-𝐿
-2
-+
-𝐿
-3
-+
-𝐿
-4
-+
-𝐿
-1
-𝐿
-2
-Δ=1−L 
-1
-​
- +L 
-2
-​
- +L 
-3
-​
- +L 
-4
-​
- +L 
-1
-​
- L 
-2
-​
- 
-Cofactores:
-
-Δ
-1
-=
-1
-,
-Δ
-2
-=
-1
-,
-Δ
-3
-=
-1
-−
-𝐿
-1
-Δ 
-1
-​
- =1,Δ 
-2
-​
- =1,Δ 
-3
-​
- =1−L 
-1
-​
- 
-Resultado:
-
-𝐶
-(
-𝑠
-)
-𝑅
-(
-𝑠
-)
-=
-𝑃
-1
-Δ
-1
-+
-𝑃
-2
-Δ
-2
-+
-𝑃
-3
-Δ
-3
-Δ
-R(s)
-C(s)
-​
- = 
-Δ
-P 
-1
-​
- Δ 
-1
-​
- +P 
-2
-​
- Δ 
-2
-​
- +P 
-3
-​
- Δ 
-3
-​
- 
-​
- 
-🧩 Cómo resolver un problema con Mason paso a paso
-Identificar los caminos directos 
-𝑃
-𝑘
-P 
-k
-​
-  y calcular su ganancia.
-
-Identificar los lazos 
-𝐿
-𝑖
-L 
-i
-​
-  y su ganancia.
-
-Calcular Δ: considerar la combinación de lazos que no se tocan entre sí.
-
-Para cada camino directo 
-𝑃
-𝑘
-P 
-k
-​
- , calcular su cofactor 
-Δ
-𝑘
-Δ 
-k
-​
-  ignorando los lazos que lo tocan.
-
-Aplicar la fórmula de Mason:
-
-𝐶
-(
-𝑠
-)
-𝑅
-(
-𝑠
-)
-=
-∑
-𝑃
-𝑘
-Δ
-𝑘
-Δ
-R(s)
-C(s)
-​
- = 
-Δ
-∑P 
-k
-​
- Δ 
-k
-​
- 
-​
- 
-📘 Actividades (Diapositivas 16–17)
-Reducir por álgebra de bloques una función de transferencia.
-
-Convertir a diagrama de flujo de señal y resolver con Mason.
+$$\frac{𝐶(𝑠)}{𝑅(𝑠)} = \frac{∑𝑃_𝑘Δ_𝑘}{Δ}$$
