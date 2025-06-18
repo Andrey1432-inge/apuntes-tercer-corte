@@ -58,6 +58,77 @@ $$\frac{A}{s^2}$$
 
 $$\frac{A}{s^3}$$
 
+## 9. Ejemplos resueltos
+
+- Ejemplo 1: Hallar la función de transferencia
+
+Ecuación:
+
+$$𝑦¨ + 3𝑦˙ + 2𝑦 = 3𝑢˙ + 3𝑢$$
+
+Transformada de Laplace (condiciones iniciales = 0):
+
+$$𝑠^2𝑌(𝑠) + 3𝑠𝑌(𝑠) + 2𝑌(𝑠) = 3𝑠𝑈(𝑠) + 3𝑈(𝑠)$$
+
+Despejamos $$\frac{𝑌(𝑠)}{𝑈(𝑠)}:
+
+$$\frac{𝑌(𝑠)}{𝑈(𝑠)} = \frac{3𝑠 + 3}{𝑠^2 + 3𝑠 + 2}
+
+- Ejemplo 2: Encontrar Zeros y Polos
+
+Función de transferencia:
+
+$$𝐺(𝑠) = \frac{3𝑠 − 1}{𝑠^2 + 3𝑠 + 2}
+ 
+Zeros:
+
+Numerador = 0 → 3𝑠 − 1 = 0 → 𝑠 = \frac{1}{3}
+​
+Polos:
+
+Denominador = 0 → 𝑠^2 + 3𝑠 + 2 = 0 → 𝑠 = −1 , −2
+
+## 10. Actividad final resuelta
+
+- Ecuación diferencial:
+
+$$𝑦¨¨ + 5𝑦''' + 13.5𝑦¨ + 3.75𝑦 = 7.5𝑢˙ + 3.75𝑢$$
+
+Función de transferencia (condiciones iniciales = 0)
+
+Transformamos:
+
+$$(𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75)𝑌(𝑠) = (7.5𝑠 + 3.75)𝑈(𝑠)$$
+
+$$𝐺(𝑠) = \frac{𝑌(𝑠)}{𝑈(𝑠)} = \frac{7.5𝑠 + 3.75}{𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75}$$
+ 
+Zeros:
+
+Numerador = 0 → 7.5𝑠 + 3.75 = 0 → 𝑠 = −0.5
+
+Polos:
+
+Resolvemos 
+
+$$𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75 = 0$$ 
+
+(Usamos factorización o método numérico; aproximado)
+Raíces (estimadas): Una real y dos complejas conjugadas.
+
+$$𝑠_1 ≈ −0.293$$ (real)
+$$𝑠_2 ≈ −2.354 + 1.797𝑖$$ (complejo)
+$$𝑠_3 ≈ − 2.354 − 1.797𝑖$$ (complejo conjugado)
+
+Valor final frente a entrada escalón unitario:
+
+Entrada escalón: 
+
+$$𝑈(𝑠) = \frac{1}{𝑠}$$
+
+$$𝑌(𝑠) = \frac{7.5𝑠 + 3.75}{𝑠(𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75)}
+ 
+$$lim_{𝑠 → 0}𝑠𝑌(𝑠) = lim_{⁡𝑠 → 0}\frac{7.5𝑠 + 3.75}{𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75} = \frac{3.75}{3.75} = 1
+
 # 2. Modelamiento por diagramas
 
 ## 1. Modelos de sistemas complejos
@@ -190,7 +261,7 @@ $$𝐺(𝑠) = \frac{𝑄(𝑠)}{𝑄_𝑖(𝑠)} = \frac{𝜌_{inicial}𝑠 + �
  
 **Ejemplo:**
 
-$$𝐺(𝑠) = frac{2𝑠 + 3 ⋅ 4}{𝑠 + 4} = \frac{2𝑠 + 12}{𝑠 + 4}$$
+$$𝐺(𝑠) = \frac{2𝑠 + 3 ⋅ 4}{𝑠 + 4} = \frac{2𝑠 + 12}{𝑠 + 4}$$
  
 ## 12. Sistema Térmico
 Aunque el documento no incluye fórmulas detalladas, generalmente se modela como:
