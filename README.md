@@ -276,6 +276,83 @@ donde:
 - R la resistencia térmica
 - T temperatura del sistema
 
+## 13. Ejemplos resueltos
+
+- Ejemplo 1: Mezcla de sustancias (Tanque de salmuera)
+
+Enunciado:
+
+Un tanque tiene inicialmente 8 L de agua con 2 kg de sal disueltos. Se le inyecta una solución salina de 3 kg/L a una velocidad de 4 L/min, y la mezcla bien agitada sale a la misma velocidad.
+
+Hallar la función de transferencia $$𝐺(𝑠) = \frac{𝑄(𝑠)}{𝑄_𝑖(𝑠)}
+
+Solución:
+
+- 𝑉=8L → volumen constante
+- 𝐶_{in} = 3 kg/L
+- 𝑞_{in} = 𝑞_{out} = 4 L/min
+- 𝑄_𝑖(𝑠): entrada de sal (kg/min)
+- 𝑄(𝑠): salida de sal (kg/min)
+
+La función de transferencia para mezcla continua:
+
+$$𝐺(𝑠) = \frac{𝑄(𝑠)}{𝑄_𝑖(𝑠)} = \frac{𝑚_{inicial}𝑠 + 𝐶_{in}𝑞_{in}}{𝑠 + 𝑞_{out}}$$
+ 
+Sustituyendo:
+
+$$𝐺(𝑠) = \frac{2𝑠 + 3 ⋅ 4}{𝑠 + 4} = \frac{2𝑠 + 12}{𝑠 + 4}$$
+
+Resultado final:
+
+$$𝐺(𝑠) = \frac{2𝑠 + 12}{𝑠 + 4}$$
+
+- Ejemplo 2: Motor DC con corriente de armadura
+
+Datos del sistema:
+
+- 𝑅 = 2Ω
+- 𝐿 = 0.5𝐻
+- 𝐾 = 0.01 (constante de torque y FEM)
+- 𝐽 = 0.02 𝑘𝑔 ⋅ $$𝑚^2$$
+- 𝐵 = 0.1 𝑁 ⋅ 𝑚 ⋅ 𝑠
+
+Hallar la función de transferencia $$\frac{Ω(𝑠)}{𝑉_𝑎(𝑠)}$$ del motor DC.
+
+Ecuaciones del sistema:
+
+-Ecuación eléctrica:
+
+$$𝑉_𝑎(𝑠) = 𝐿𝑠𝐼_𝑎(𝑠) + 𝑅𝐼_𝑎(𝑠) + 𝐾Ω(𝑠)$$
+
+- Ecuación mecánica:
+
+$$𝐽𝑠Ω(𝑠) + 𝐵Ω(𝑠) = 𝐾𝐼_𝑎(𝑠)$$
+
+Procedimiento:
+Despeja 𝐼_𝑎(𝑠) de la mecánica:
+
+$$𝐼_𝑎(𝑠) = \frac{𝐽𝑠 + 𝐵}{𝐾} Ω(𝑠)$$
+
+Sustituye en la ecuación eléctrica:
+
+$$𝑉_𝑎(𝑠) = [𝐿𝑠 + 𝑅] ⋅ \frac{𝐽𝑠 + 𝐵}{𝐾} Ω(𝑠) + 𝐾Ω(𝑠)$$
+
+Factoriza:
+
+$$𝑉_𝑎(𝑠) = (\frac{(𝐿𝑠 + 𝑅)(𝐽𝑠 + 𝐵)}{𝐾} + 𝐾) Ω(𝑠)$$
+
+Función de transferencia:
+
+$$\frac{Ω(𝑠)}{𝑉_𝑎(𝑠)} = \frac{𝐾}{(𝐿𝑠 + 𝑅)(𝐽𝑠 + 𝐵) + 𝐾^2$$
+
+Sustituimos valores:
+
+$$\frac{Ω(𝑠)}{𝑉_𝑎(𝑠)} = \frac{0.01}{(0.5𝑠 + 2)(0.02𝑠 + 0.1) + 0.0001}$$
+ 
+Resultado final:
+
+$$\frac{Ω(𝑠)}{𝑉_𝑎(𝑠)} = \frac{0.01}{(0.5𝑠 + 2)(0.02𝑠 + 0.1) + 0.0001}$$
+
 # 3. ALGEBRA DE BLOQUES
 
 ## 1. Definicion:
