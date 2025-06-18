@@ -70,15 +70,15 @@ Transformada de Laplace (condiciones iniciales = 0):
 
 $$𝑠^2𝑌(𝑠) + 3𝑠𝑌(𝑠) + 2𝑌(𝑠) = 3𝑠𝑈(𝑠) + 3𝑈(𝑠)$$
 
-Despejamos $$\frac{𝑌(𝑠)}{𝑈(𝑠)}:
+Despejamos $$\frac{𝑌(𝑠)}{𝑈(𝑠)}$$:
 
-$$\frac{𝑌(𝑠)}{𝑈(𝑠)} = \frac{3𝑠 + 3}{𝑠^2 + 3𝑠 + 2}
+$$\frac{𝑌(𝑠)}{𝑈(𝑠)} = \frac{3𝑠 + 3}{𝑠^2 + 3𝑠 + 2}$$
 
 - Ejemplo 2: Encontrar Zeros y Polos
 
 Función de transferencia:
 
-$$𝐺(𝑠) = \frac{3𝑠 − 1}{𝑠^2 + 3𝑠 + 2}
+$$𝐺(𝑠) = \frac{3𝑠 − 1}{𝑠^2 + 3𝑠 + 2}$$
  
 Zeros:
 
@@ -116,7 +116,9 @@ $$𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75 = 0$$
 Raíces (estimadas): Una real y dos complejas conjugadas.
 
 $$𝑠_1 ≈ −0.293$$ (real)
+
 $$𝑠_2 ≈ −2.354 + 1.797𝑖$$ (complejo)
+
 $$𝑠_3 ≈ − 2.354 − 1.797𝑖$$ (complejo conjugado)
 
 Valor final frente a entrada escalón unitario:
@@ -125,9 +127,9 @@ Entrada escalón:
 
 $$𝑈(𝑠) = \frac{1}{𝑠}$$
 
-$$𝑌(𝑠) = \frac{7.5𝑠 + 3.75}{𝑠(𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75)}
+$$𝑌(𝑠) = \frac{7.5𝑠 + 3.75}{𝑠(𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75)}$$
  
-$$lim_{𝑠 → 0}𝑠𝑌(𝑠) = lim_{⁡𝑠 → 0}\frac{7.5𝑠 + 3.75}{𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75} = \frac{3.75}{3.75} = 1
+$$lim_{𝑠 → 0}𝑠𝑌(𝑠) = lim_{⁡𝑠 → 0}\frac{7.5𝑠 + 3.75}{𝑠^3 + 5𝑠^2 + 13.5𝑠 + 3.75} = \frac{3.75}{3.75} = 1$$
 
 # 2. Modelamiento por diagramas
 
